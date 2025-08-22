@@ -1,0 +1,175 @@
+First Day Challenge 22-08-2025
+Python - 1. Datatypes, 2.Strings, 3. List, 4. Tuples, 5.Sets
+DSA - 1 . Reverse, 2.String, 3. Palindrome check
+SQL - 1. Basic, 2.SELECT, 3. Where, 4. Order by
+
+
+Python - 1. Datatypes, 2.Strings, 3. List, 4. Tuples, 5.Sets
+1. DataTypes
+
+. Data Types in Python
+
+int → Whole numbers (e.g., 10, -5).
+
+float → Decimal numbers (e.g., 3.14, -0.99).
+
+complex → Numbers with real & imaginary part (e.g., 2+3j).
+
+bool → Boolean values (True / False).
+
+str → Sequence of characters (e.g., "Prerna").
+
+list → Ordered, mutable collection (e.g., [1,2,3]).
+
+tuple → Ordered, immutable collection (e.g., (1,2,3)).
+
+set → Unordered, unique elements (e.g., {1,2,3}).
+
+dict → Key-value pairs (e.g., {"name":"Prerna"}).
+
+👉 One line: “Python has built-in data types like int, float, bool, str, list, tuple, set, dict to handle all kinds of data in flexible ways.”
+
+# Basic types
+num = 10            # int
+price = 99.99       # float
+name = "Prerna"     # str
+is_active = True    # bool
+data = None         # NoneType
+
+2.Strings
+
+👉 One line: “A string is an ordered, immutable sequence of characters used to store text.”
+
+Example: "Hello", 'World'.
+
+s = "hello world"
+print(s.upper())     # HELLO WORLD
+print(s[0:5])        # hello
+print(s[::-1])       # reverse string
+
+
+3. List
+
+👉 One line: “A list is an ordered, mutable collection of elements, allowing duplicates.”
+
+Example: [10, 20, 30, "Prerna"].
+
+fruits = ["apple", "banana", "cherry"]
+fruits.append("mango")      # add
+fruits.remove("banana")     # remove
+print(fruits)               # ['apple', 'cherry', 'mango']
+
+
+4. Tuple
+
+👉 One line: “A tuple is an ordered, immutable collection of elements, often used for fixed data.”
+
+Example: (10, 20, 30).
+
+t = (1, 2, 3)
+print(t[0])   # 1
+# immutable → cannot change value directly
+
+
+5. Set
+
+👉 One line: “A set is an unordered collection of unique elements.”
+
+Example: {1, 2, 3, 3} → {1,2,3}.
+
+s = {1, 2, 3, 3}
+print(s)   # {1, 2, 3}  (duplicates not allowed)
+s.add(4)
+print(s)   # {1, 2, 3, 4}
+
+
+DSA - 1 . Reverse, 2.String, 3. Palindrome check
+1) Reverse String
+
+One-liner: “Reverse string means characters ko ulta order me print karna.”
+
+def reverse_string(s: str) -> str:
+    return s[::-1]
+
+print(reverse_string("prerna"))  # anrerp
+
+2) Palindrome Check (basic)
+
+One-liner: “Palindrome woh string hoti hai jo ulta-seedha same padhi jaye.”
+
+def is_palindrome(s: str) -> bool:
+    return s == s[::-1]
+
+print(is_palindrome("madam"))   # True
+print(is_palindrome("prerna"))  # False
+
+3) Palindrome Check (advanced: case/space ignore)
+
+One-liner: “Clean karke (spaces, cases ignore) compare karte hain to robust palindrome check milta hai.”
+
+def is_palindrome_advanced(s: str) -> bool:
+    cleaned = ''.join(ch.lower() for ch in s if ch.isalnum())
+    return cleaned == cleaned[::-1]
+
+print(is_palindrome_advanced("A man a plan a canal Panama"))  # True
+
+example-
+def reverse_string(s: str) -> str:
+    return s[::-1]
+
+def is_palindrome_advanced(s: str) -> bool:
+    cleaned = ''.join(ch.lower() for ch in s if ch.isalnum())
+    return cleaned == cleaned[::-1]
+
+if __name__ == "__main__":
+    s = input("Enter a string: ")
+    print("Reversed:", reverse_string(s))
+    print("Is Palindrome?", is_palindrome_advanced(s))
+
+
+SQL - 1. Basic, 2.SELECT, 3. Where, 4. Order by
+Assume table employees(id, name, department, salary).
+
+1) SELECT
+
+One-liner: “SELECT columns choose karke table se data read karta hai.”
+
+-- saara data
+SELECT * FROM employees;
+
+-- specific columns
+SELECT name, salary FROM employees;
+
+2) WHERE
+
+One-liner: “WHERE condition lagakar filtered rows nikalta hai.”
+
+-- sirf IT department ke employees
+SELECT * FROM employees
+WHERE department = 'IT';
+
+-- salary 45000 se zyada
+SELECT name FROM employees
+WHERE salary > 45000;
+
+3) ORDER BY
+
+One-liner: “ORDER BY result ko ascending/descending order me sort karta hai.”
+
+-- salary ke hisaab se highest se lowest
+SELECT * FROM employees
+ORDER BY salary DESC;
+
+-- department alphabetically
+SELECT name, department FROM employees
+ORDER BY department ASC;
+
+(Bonus) Highest paid IT employee
+
+One-liner: “LIMIT/ORDER BY se top salaried employee nikal sakte hain.”
+
+SELECT * FROM employees
+WHERE department = 'IT'
+ORDER BY salary DESC
+LIMIT 1;
+
