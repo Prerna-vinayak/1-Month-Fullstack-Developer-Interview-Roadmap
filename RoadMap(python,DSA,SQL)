@@ -1,0 +1,251 @@
+Goal: Python fundamentals strong + easy DSA problems solve karna.
+
+Day 1
+
+Python: Data types, Strings, Lists, Tuples, Sets
+
+DSA: Reverse string, Palindrome check
+
+SQL: Basic SELECT, WHERE, ORDER BY
+
+Day 2
+
+Python: Dictionary, List comprehension, Functions (*args, **kwargs)
+
+DSA: Two sum problem, Max/Min in array
+
+SQL: GROUP BY, COUNT, SUM
+
+Day 3
+
+Python: OOPs (Class, Object, Inheritance)
+
+DSA: Find duplicates in array, Anagram check
+
+SQL: INNER JOIN
+
+Day 4
+
+Python: OOPs (Polymorphism, Encapsulation, Abstraction)
+
+DSA: First non-repeating character, Frequency counter using dict
+
+SQL: LEFT JOIN, RIGHT JOIN
+
+Day 5
+
+Python: Exception Handling, File Handling
+
+DSA: Move zeros to end, Merge 2 sorted arrays
+
+SQL: Subquery basics
+
+Day 6
+
+Python: Decorators, Iterators, Generators
+
+DSA: Remove duplicates from string, Longest word in string
+
+SQL: Transactions, Commit, Rollback
+
+Day 7 (Revision Day)
+
+Revise Python OOPs + Decorators
+
+Solve 10 mixed DSA problems (Arrays/Strings)
+
+SQL practice with sample DB
+
+📅 Week 2 – Django + SQL Advanced + DSA
+
+Goal: Django MVT + ORM strong karna, SQL intermediate, DSA medium.
+
+Day 8
+
+Django: MVT architecture, Project structure
+
+DSA: Binary Search, Find missing number
+
+SQL: JOINS + practice
+
+Day 9
+
+Django: Models & Migrations
+
+DSA: Merge sorted arrays, Intersection of arrays
+
+SQL: GROUP BY + HAVING
+
+Day 10
+
+Django: QuerySet methods (filter, exclude, annotate)
+
+DSA: Kadane’s Algorithm (max subarray sum)
+
+SQL: Aggregate functions (SUM, AVG, MAX, MIN)
+
+Day 11
+
+Django: Views (Function Based + Class Based)
+
+DSA: Rotate array, Find majority element
+
+SQL: Indexing basics
+
+Day 12
+
+Django: Templates + Static files
+
+DSA: Balanced Parentheses (Stack)
+
+SQL: CTEs
+
+Day 13
+
+Django: Forms, Authentication basics
+
+DSA: Stack min element, Implement queue using 2 stacks
+
+SQL: Normalization basics
+
+Day 14 (Revision)
+
+Revise Django models/views/templates
+
+Solve 10 mixed DSA Qs
+
+SQL: Write queries from scratch on sample DB
+
+📅 Week 3 – React + API Integration + DSA
+
+Goal: React basics + integrate Django API, medium DSA.
+
+Day 15
+
+JS: let/const/var, Arrow functions, Template literals
+
+DSA: Linked List basics (insert, print)
+
+SQL: Practice complex JOIN queries
+
+Day 16
+
+React: Setup, JSX, Functional Components
+
+DSA: Reverse linked list
+
+SQL: Write queries for employee DB
+
+Day 17
+
+React: Props & State
+
+DSA: Detect loop in linked list
+
+SQL: Window functions basics
+
+Day 18
+
+React: useState, useEffect hooks
+
+DSA: Middle of linked list
+
+SQL: Case/When statements
+
+Day 19
+
+React: Forms (controlled vs uncontrolled)
+
+DSA: Fibonacci recursion + memoization
+
+SQL: Write 5 custom queries
+
+Day 20
+
+React: API calls with fetch/axios
+
+DSA: Generate subsets (recursion)
+
+SQL: Complex query practice
+
+Day 21 (Mini Project)
+
+Build small CRUD app: React frontend + Django API
+
+Solve 5 medium DSA problems (arrays/linked list)
+
+📅 Week 4 – Mock Prep + System Design + DSA Revision
+
+Goal: Interview simulation + strong revision.
+
+Day 22
+
+Django REST Framework: Serializers, APIView
+
+DSA: QuickSort basics
+
+Interview Qs: Python vs Node.js, Django vs Flask
+
+Day 23
+
+DRF: ViewSets, Routers, JWT basics
+
+DSA: MergeSort basics
+
+Interview Qs: Explain ORM, select_related vs prefetch_related
+
+Day 24
+
+React Router, Protected Routes
+
+DSA: Coin Change (basic DP)
+
+Interview Qs: Session vs JWT
+
+Day 25
+
+System Design: How login system works?
+
+DSA: Recap array+string
+
+Interview Qs: Explain your HRMS project flow
+
+Day 26
+
+System Design: How frontend talks to backend?
+
+DSA: Recap Linked List + Stack
+
+Interview Qs: REST API vs GraphQL
+
+Day 27
+
+Revise Python + Django
+
+Solve 10 random Leetcode easy questions
+
+Mock Qs: OOPs in Python, difference between is and ==
+
+Day 28
+
+Revise React + SQL
+
+Solve 10 mixed DSA Qs
+
+Mock Qs: How useEffect works? Explain async/await.
+
+Day 29 (Mock Interview 1)
+
+30 mins: Tell me about yourself + Project explanation
+
+45 mins: Solve 2 DSA problems live
+
+15 mins: Django/React theory
+
+Day 30 (Mock Interview 2)
+
+30 mins: System Design (Login + Employee DB design)
+
+30 mins: Solve 2 medium DSA problems
+
+30 mins: HR questions + communication practice
