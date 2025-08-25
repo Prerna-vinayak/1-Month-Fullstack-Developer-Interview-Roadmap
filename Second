@@ -1,0 +1,130 @@
+Python: Dictionary, List comprehension, Functions (*args, **kwargs)
+
+DSA: Two sum problem, Max/Min in array
+
+SQL: GROUP BY, COUNT, SUM
+
+Python 
+1. Dictionary
+
+Definition: A dictionary in Python is a collection of key–value pairs, where each key is unique.
+Example:
+
+students = {"Prerna": 85, "Rahul": 92, "Aditi": 78, "Rohit": 90}
+
+# Find topper
+topper = max(students, key=students.get)
+print("Topper:", topper, "Marks:", students[topper])
+
+
+✅ Explanation: Here, names are keys and marks are values; max(..., key=students.get) finds the student with highest marks.
+
+2. List Comprehension
+
+Definition: A concise way to create new lists from existing iterables in a single line.
+Example:
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+evens = [n for n in numbers if n % 2 == 0]
+print(evens)
+
+
+✅ Explanation: [n for n in numbers if n % 2 == 0] generates a new list containing only even numbers.
+
+3. Functions with *args and **kwargs
+
+Definition:
+
+*args lets you pass multiple positional arguments.
+
+**kwargs lets you pass multiple keyword arguments as a dictionary.
+Example:
+
+def add_numbers(*args, **kwargs):
+    total = sum(args)
+    print("Operation:", kwargs.get("operation", "Addition"))
+    return total
+
+result = add_numbers(10, 20, 30, operation="Sum of Numbers")
+print("Result:", result)
+
+
+✅ Explanation: *args collects numbers into a tuple, **kwargs passes extra info like "operation".
+
+🔹 DSA
+1. Two Sum Problem
+
+Definition: Given an array and a target, find indices of two numbers such that their sum equals the target.
+Example:
+
+def two_sum(nums, target):
+    seen = {}
+    for i, num in enumerate(nums):
+        diff = target - num
+        if diff in seen:
+            return [seen[diff], i]
+        seen[num] = i
+    return []
+
+print(two_sum([2, 7, 11, 15], 9))  # Output: [0,1]
+
+
+✅ Explanation: We store numbers in a dictionary (seen) and check if the required difference exists.
+
+2. Max / Min in Array
+
+Definition: To find the largest and smallest elements in an array by iterating through it.
+Example:
+
+def find_max_min(arr):
+    max_val = arr[0]
+    min_val = arr[0]
+    for num in arr:
+        if num > max_val:
+            max_val = num
+        if num < min_val:
+            min_val = num
+    return max_val, min_val
+
+print(find_max_min([3, 1, 7, 9, 2, 8]))
+
+
+✅ Explanation: Loop compares each element with the current max_val and min_val to update them.
+
+🔹 SQL
+1. GROUP BY
+
+Definition: Groups rows having the same values in a column and performs aggregation.
+Example:
+
+SELECT department, AVG(salary) AS avg_salary
+FROM employees
+GROUP BY department;
+
+
+✅ Explanation: Groups employees by department and calculates average salary per group.
+
+2. COUNT
+
+Definition: Counts the number of rows in a column or table.
+Example:
+
+SELECT department, COUNT(*) AS total_employees
+FROM employees
+GROUP BY department;
+
+
+✅ Explanation: Returns total number of employees per department.
+
+3. SUM
+
+Definition: Adds up all values of a numeric column.
+Example:
+
+SELECT SUM(salary) AS total_salary
+FROM employees;
+
+
+✅ Explanation: Returns the total salary paid to all employees in the company.
+
+⚡ Ye ab ekdum revision notes ban gaye (Definition + Example + Explanation).
